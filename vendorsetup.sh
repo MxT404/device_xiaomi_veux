@@ -1,9 +1,9 @@
 if [ ! -d "vendor/xiaomi/veux" ]; then
-    git clone https://github.com/acerhizmq/vendor_xiaomi_veux.git -b 17 vendor/xiaomi/veux
+    git clone https://github.com/MxT404/vendor_xiaomi_veux.git -b 17 vendor/xiaomi/veux
 fi
 
 if [ ! -d "kernel/xiaomi/veux" ]; then
-    git clone https://github.com/acerhizmq/kernel_xiaomi_veux.git -b 17 kernel/xiaomi/veux --depth=1
+    git clone https://github.com/MxT404/kernel_xiaomi_veux.git -b 17 kernel/xiaomi/veux --depth=1
 fi
 
 if [ ! -d "hardware/xiaomi" ]; then
@@ -17,21 +17,21 @@ fi
 
 # Xiaomi Camera (MIUI Camera)
 if [ ! -d "device/xiaomi/camera" ]; then
-    git clone https://github.com/acerhizmq/device_xiaomi_camera.git device/xiaomi/camera
+    git clone https://github.com/MxT404/device_xiaomi_camera.git device/xiaomi/camera
 fi
 
 if [ ! -d "vendor/xiaomi/camera" ]; then
-    git clone https://github.com/acerhizmq/vendor_xiaomi_camera.git vendor/xiaomi/camera
+    git clone https://github.com/MxT404/vendor_xiaomi_camera.git vendor/xiaomi/camera
 fi
 
 # Dolby
 if [ ! -d "hardware/dolby" ]; then
-    git clone https://github.com/acerhizmq/hardware_dolby.git hardware/dolby
+    git clone https://github.com/acerhizmq/hardware_dolby hardware/dolby
 fi
 
 # Bluetooth
 if [ ! -d "hardware/qcom-caf/bt" ]; then
-    git clone https://github.com/acerhizmq/hardware_qcom_bt.git -b lineage-23.2-caf hardware/qcom-caf/bt
+    git clone https://github.com/MxT404/hardware_qcom_bt.git -b lineage-23.2-caf hardware/qcom-caf/bt
 fi
 
 # Framework patches (leica: MIUI camera, torch: torch strength, whatsapp: third-party

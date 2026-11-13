@@ -191,3 +191,5 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Include Lineage/Lunaris board configurations to export variables to Soong
 include vendor/lineage/config/BoardConfigLineage.mk
+
+include vendor/lunaris/dolby/BoardConfigDolby.mk

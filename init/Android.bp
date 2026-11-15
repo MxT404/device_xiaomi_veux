@@ -1,0 +1,21 @@
+// SPDX-License-Identifier: Apache-2.0
+
+cc_library {
+    name: "libinit_veux",
+    vendor: true,
+    srcs: ["init_veux.cpp"],
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+    shared_libs: [
+        "libbase",
+        "libinit",
+        "liblog",
+    ],
+    target: {
+        android: {
+            cflags: ["-DANDROID"],
+        },
+    },
+}

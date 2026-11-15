@@ -1,0 +1,9 @@
+# SPDX-License-Identifier: Apache-2.0
+
+import /vendor/etc/init/hw/init.target.rc
+
+on init
+    setprop ro.vendor.device.name veux
+
+on vendor:hal
+    class_start vendor

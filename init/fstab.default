@@ -1,0 +1,6 @@
+# SPDX-License-Identifier: Apache-2.0
+
+# dev_mount_pt	fs_type	dev_src	flags			fs_mgr_flags
+/boot		emmc	/dev/block/by-name/boot		0		slotselect,backup=1
+/dtbo		emmc	/dev/block/by-name/dtbo		0		slotselect,vbmeta
+/vendor_boot	emmc	/dev/block/by-name/vendor_boot		0		slotselect

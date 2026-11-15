@@ -62,5 +62,6 @@ This is the AOSPA device tree for the Redmi Note 11 Pro+ / Poco X4 Pro (codename
 ## Credits
 
 - [AOSPA](https://github.com/AOSPA) - ROM
-- [LineageOS](https://github.com/LineageOS) - Base device tree reference
-- [MxT404](https://github.com/MxT404) - Original device tree
+- [RisingOS](https://github.com/RisingOS-Revived) - Base device tree reference
+- [acerhizmq](https://github.com/acerhizmq - Original device tree
+- 

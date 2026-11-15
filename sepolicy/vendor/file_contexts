@@ -1,0 +1,3 @@
+# SPDX-License-Identifier: Apache-2.0
+
+/vendor/etc/permissions/camerax-vendor-extensions.xml	u:object_r:vendor_configs_file:s0

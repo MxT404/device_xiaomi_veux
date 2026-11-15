@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: Apache-2.0
+
+allow radio vendor_hal_adsp:dir r_dir_perms;
+allow radio vendor_hal_adsp:file r_file_perms;

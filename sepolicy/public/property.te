@@ -1,0 +1,3 @@
+# SPDX-License-Identifier: Apache-2.0
+
+typeattribute vendor_powerhal_property vendor_property_type;

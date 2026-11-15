@@ -1,0 +1,3 @@
+# SPDX-License-Identifier: Apache-2.0
+
+vendor.hw. power.mode			u:object_r:vendor_powerhal_property:s0

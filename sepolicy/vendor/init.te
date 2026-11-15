@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: Apache-2.0
+
+init_daemon_domain(init)
+domain_child(init)

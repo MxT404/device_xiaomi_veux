@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<compatibility_matrix version="1.0" type="framework">
+    <hal format="hidl">
+        <name>android.hardware.camera.provider</name>
+        <version>2.4</version>
+        <interface>
+            <name>ICameraProvider</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</compatibility_matrix>

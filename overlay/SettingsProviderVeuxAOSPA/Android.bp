@@ -1,0 +1,11 @@
+// SPDX-License-Identifier: Apache-2.0
+
+android_app_import {
+    name: "SettingsProviderVeuxAOSPA",
+    apk: "SettingsProviderVeuxAOSPA.apk",
+    privileged: true,
+    product_specific: true,
+    certificate: "platform",
+    required: [""],
+    override_required_apks: [""],
+}

@@ -26,7 +26,7 @@ fi
 
 # Dolby
 if [ ! -d "hardware/dolby" ]; then
-    git clone https://github.com/acerhizmq/hardware_dolby.git hardware/dolby
+    git clone https://github.com/Ghosuto/hardware_dolby.git hardware/dolby
 fi
 
 # Bluetooth

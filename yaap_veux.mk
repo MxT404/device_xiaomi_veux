@@ -13,6 +13,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # yaap flags
 yaap_MAINTAINER := MinitxT
+WITH_GMS := true
 
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.product.mod_device=veux_global \

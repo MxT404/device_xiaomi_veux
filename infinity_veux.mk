@@ -13,7 +13,9 @@ $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # infinity flags
-INFINITY_MAINTAINER := "MinitxT"
+infinity_MAINTAINER := MinitxT
+TARGET_ENABLE_BLUR := true
+WITH_GMS := true
 
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.product.mod_device=veux_global \

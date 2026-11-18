@@ -3,6 +3,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# GApps
+TARGET_BUILD_GAPPS ?= true
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -10,10 +13,6 @@ $(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 # Inherit from device.
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
-
-# yaap flags
-yaap_MAINTAINER := MinitxT
-WITH_GMS := true
 
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.product.mod_device=veux_global \

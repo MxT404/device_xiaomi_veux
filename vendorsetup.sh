@@ -7,7 +7,7 @@ if [ ! -d "kernel/xiaomi/veux" ]; then
 fi
 
 if [ ! -d "hardware/xiaomi" ]; then
-    git clone https://github.com/LineageOS/android_hardware_xiaomi.git hardware/xiaomi
+    git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-24.0 hardware/xiaomi
 fi
 
 # Viper4Android
@@ -33,6 +33,9 @@ fi
 if [ ! -d "hardware/qcom-caf/bt" ]; then
     git clone https://github.com/acerhizmq/hardware_qcom_bt.git -b lineage-23.2-caf hardware/qcom-caf/bt
 fi
+
+# Install the additional HALs and apply compatibility fixes to the shared trees.
+bash device/xiaomi/veux/tools/setup-yaap-dependencies.sh || return 1
 
 # Framework patches (leica: MIUI camera, torch: torch strength, whatsapp: third-party
 # camera apps); skips what the ROM has. Pick some with e.g. VEUX_PATCHES="leica torch".

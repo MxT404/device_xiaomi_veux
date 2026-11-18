@@ -5,9 +5,6 @@
 
 DEVICE_PATH := device/xiaomi/veux
 
-# Force inclusion of Lineage SEPolicy
-LINEAGE_BUILD := true
-
 # Allow vendor binaries to be copied via PRODUCT_COPY_FILES without triggering ELF check errors
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
@@ -45,8 +42,15 @@ AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
 AUDIO_FEATURE_ENABLED_GKI := true
 AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
 AUDIO_FEATURE_ENABLED_SVA_MULTI_STAGE := true
+# The Holi primary HAL and its extensions are supplied by the veux vendor tree.
+AUDIO_USE_STUB_HAL := true
 BOARD_SUPPORTS_OPENSOURCE_STHAL := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
+
+# Camera
+TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED := true
+TARGET_CAMERA_SERVICE_EXT_LIB := //device/xiaomi/veux:libcameraservice_extension.veux
+TARGET_CAMERA_PACKAGE_NAME := com.xiaomi.sessionparams.clientName
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := veux
@@ -188,6 +192,3 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom-caf/bt/libbt-vendor
-
-# Include Lineage/Lunaris board configurations to export variables to Soong
-include vendor/lineage/config/BoardConfigLineage.mk

@@ -1,0 +1,14 @@
+diff --git a/packages/Euicc/Android.bp b/packages/Euicc/Android.bp
+--- a/packages/Euicc/Android.bp
++++ b/packages/Euicc/Android.bp
+@@ -6,6 +6,10 @@
+ 
+ phony {
+     name: "XiaomiEuicc",
++    enabled: select(soong_config_variable("veux", "disable_lineage_euicc"), {
++        true: false,
++        default: true,
++    }),
+     required: [
+         "EuiccPolicy",
+         "EuiccPolicyXiaomi",

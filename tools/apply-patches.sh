@@ -89,7 +89,9 @@ leica_has() {
 whatsapp_has() {
     case "$1" in
         1) has "$LCS/CameraService.cpp" "getCurrPackageName" ;;
-        2) has "$AV/camera/cameraserver/Android.bp" '-DCAMERA_PACKAGE_NAME=' ;;
+        2) has "$AV/camera/cameraserver/Android.bp" '-DCAMERA_PACKAGE_NAME=' ||
+            { has "$LCS/Android.bp" '"camera_package_name_defaults"' &&
+              has "$TOP/vendor/yaap/build/soong/Android.bp" '-DCAMERA_PACKAGE_NAME='; } ;;
         3) has "$LCS/device3/Camera3Device.h" "setClientPackageName" ;;
     esac
 }

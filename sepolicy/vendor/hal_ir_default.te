@@ -1,0 +1,5 @@
+type lirc_device, dev_type;
+vendor_internal_prop(vendor_ir_prop)
+
+allow hal_ir_default lirc_device:chr_file rw_file_perms;
+get_prop(hal_ir_default, vendor_ir_prop)

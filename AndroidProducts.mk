@@ -4,9 +4,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rising_veux.mk
+    $(LOCAL_DIR)/yaap_veux.mk
 
 COMMON_LUNCH_CHOICES := \
-    rising_veux-user \
-    rising_veux-userdebug \
-    rising_veux-eng
+    yaap_veux-user \
+    yaap_veux-userdebug \
+    yaap_veux-eng

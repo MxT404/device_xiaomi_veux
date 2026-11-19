@@ -11,6 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
+# Keep a system WebView provider available if the Google APK fails to install.
+ifeq ($(TARGET_BUILD_GAPPS),true)
+PRODUCT_PACKAGES += TrichromeWebViewDualArch
+endif
+
 # Inherit from device.
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
